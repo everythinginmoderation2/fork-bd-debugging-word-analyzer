@@ -1,29 +1,11 @@
-# Debugging Pre-work
-
-**branch name: debugging-prework**
-
-(if you're not sure what to do with the branch name, go back to the
-[Coding Activity Solutions page](https://mlu.instructure.com/courses/609/pages/coding-activity-instructions)
-on Canvas)
-
-**RDE workflows:**
-- `debugging-prework`
-
-(We will put the names of RDE workflows that you can use in the
-prework/classroom activities at the top of their README files.
-In this lesson, we will let you know when to run this. For now,
-just follow the instructions below.)
+# edb-debugging-word-analyzer
 
 ## Introduction to the Example Code
 
 ### Read (5 minutes)
 Read the Javadoc for the `WordAnalyzer` class and its methods, but not the actual source.
-You can open the Javadoc from IntelliJ by opening the `build/brazil-documentation/javadoc` folder,
+You can open the Javadoc from IntelliJ by opening the `javadoc` folder,
 right-clicking on `index.html`, and choosing "Open in Browser" from the context menu.
-
-(If the `build/` directory doesn't exist, did you follow all of the
-instructions in Snippets setup? Was there an RDE workflow to run?
-Did it succeed?)
 
 Assuming the code works as described in the Javadoc, if we initialized a
 `WordAnalyzer` with the string `"toothless"`, `firstRepeatedCharacter()`
@@ -65,10 +47,10 @@ appropriate icons in your version of IntelliJ.
 **Vocabulary alert!** The presenter uses some terms you may not know yet.
 These aren't in the learning objectives, so you don't need to memorize
 them:
-* "logical bug": An error in code that causes incorrect results for valid
+* `logical bug`: An error in code that causes incorrect results for valid
 expected inputs. Code with logical bugs compiles properly, but works
 improperly.
-* "flow of execution": The order that code statements are executed. This
+* `flow of execution`: The order that code statements are executed. This
 is also called "flow control". In code, statements like `if` can change
 the flow of execution. The debugger allows you to observe and control
 the flow by specifying where to interrupt and when to continue.
@@ -108,9 +90,3 @@ have some failures.
 You've already explored debugging with print statements and debugging with the
 interactive debugger. Apply your debugging process with either method to find
 and fix the problems in the program until the `WordAnalyzerTest` succeeds.
-
-Now it's time to push your fixes! You can run the following RDE workflow before committing to ensure
-your try is in working order: `rde wflow run debugging-prework`. Remember from
-[the Coding Try instructions](https://mlu.instructure.com/courses/609/pages/coding-activity-instructions)
-that you don't have to get a CR approval to push this code, but you will want
-to copy the URL for your commit so you can complete the prework quiz in Canvas.
