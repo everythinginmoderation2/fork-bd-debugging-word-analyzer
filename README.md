@@ -1,4 +1,4 @@
-# edb-debugging-word-analyzer
+# bd-debugging-word-analyzer
 
 ## Introduction to the Example Code
 
