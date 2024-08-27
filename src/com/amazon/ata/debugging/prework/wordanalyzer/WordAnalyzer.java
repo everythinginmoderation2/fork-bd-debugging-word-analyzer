@@ -92,6 +92,7 @@ public class WordAnalyzer {
         return numGroups;
     }
 
+
     /**
      * Checks if the letter at index i is the same as the previous character.
      *
