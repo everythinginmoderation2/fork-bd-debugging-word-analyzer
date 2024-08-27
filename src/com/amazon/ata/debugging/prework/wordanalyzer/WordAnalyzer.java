@@ -79,7 +79,7 @@ public class WordAnalyzer {
      */
     public int countRepeatedCharacters() {
         int numGroups = 0;
-        for (int i = 1; i < word.length() - 1; i++) {
+        for (int i = 0; i < word.length() - 1; i++) {
             // Is the next character part of the repeat?
             if (word.charAt(i) == word.charAt(i + 1)) {
                 // Is this the start of the repeat?
@@ -99,7 +99,11 @@ public class WordAnalyzer {
      * @return True if the character at i repeats the previous character, false otherwise.
      */
     private boolean repeatsPreviousCharacter(int i) {
-        return word.charAt(i - 1) == word.charAt(i);
+        boolean repeats = false;
+        if (i != 0) {
+            repeats = word.charAt(i - 1) == word.charAt(i);
+        }
+        return repeats;
     }
 
 }
